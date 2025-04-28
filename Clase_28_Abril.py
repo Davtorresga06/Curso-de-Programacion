@@ -7,11 +7,36 @@
 ##ESTRUCTURAS DE COCNTROL(if, else, elif)
 ## los condiconales son solo verdadero y falso(booleanos)
 
-z = 3 * 3
+## VALOR ABSOLUTO
+def Valor_abosoluto(r):
+    if r < 0:
+        return r * -1
+    else:
+        return r
+r = int(input("Ingrese un numero real para conocer su valor absoluto: "))
+print("el valor absoluto es: ",Valor_abosoluto(r))
 
-if(z == 9):
-    print("Se ejecuta el condicional")
-else:
-    print("No se ejecuta el condicional")
-    
+
+## EL MAYOR DE DOS NUMEROS
+def Mayor_de_2_numeros(a,b):
+    if a > b:
+        return a
+    else:
+        return b    
+a = float(input("Ingrese un numero real: "))
+b = float(input("Ingrese un numero real: "))
+print("El mayor de los 2 muneros es: ", Mayor_de_2_numeros(a,b))
+
+
+## OPERADOR CONDICIONAL TERNARIO
+def Valor_abosoluto(r):
+    return r * -1 if r < 0 else r
+r = int(input("Ingrese un numero real para conocer su valor absoluto: "))
+print("el valor absoluto es: ",Valor_abosoluto(r))
+
+def Mayor_de_2_numeros(a,b):
+    return a if a > b else b
+a = float(input("Ingrese un numero real: "))
+b = float(input("Ingrese un numero real: "))
+print("El mayor de los 2 muneros es: ", Mayor_de_2_numeros(a,b))
 
