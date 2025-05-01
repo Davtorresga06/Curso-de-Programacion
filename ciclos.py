@@ -16,12 +16,13 @@ print("fin del ciclo")
 ##            0        1         2        3
 Frutas = ["manzana", "pera", "naranja", "uva"]
 
-print("Frutas: ", Frutas[1])
+print("Frutas: ", Frutas[2])
 
 for i in Frutas:
     print("Esta frutas es: ", i)
 
 ##operaciones de conversion
-
-print("este es el quivalente a 65 ",chr(65)) #convierte el valor 65 a su respectivo caracter ascci
+#convierte el valor 65 a su respectivo caracter ascci
+a = int(input("ingrese un numero para conocer su equivalente en ASCCI: "))
+print("este es el quivalente a: ", chr(a)) 
 
