@@ -23,6 +23,9 @@ for i in Frutas:
 
 ##operaciones de conversion
 #convierte el valor 65 a su respectivo caracter ascci
-a = int(input("ingrese un numero para conocer su equivalente en ASCCI: "))
-print("este es el quivalente a: ", chr(a)) 
-
+while True:
+    a = int(input("Ingrese un número entero entre 27 y 1114111 para conocer su equivalente en ASCII: "))
+    if 27 <= a <= 1114111:  # Validar que el número esté en el rango permitido
+        print("Este es el equivalente a: ", chr(a))
+    else:
+        print("El número ingresado está fuera del rango permitido. Intente nuevamente.")
